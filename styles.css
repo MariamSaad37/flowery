@@ -1,0 +1,548 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #645e5e;
+}
+
+.header {
+    background-color: #f7afaf;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px; /* تحديد عرض الصورة */
+    height: 90px; /* الحفاظ على النسبة */
+    margin-right: 10px; /* مسافة بين الصورة والنص */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3dbd9;
+    color: rgb(129, 113, 113);
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.hero-text button {
+    background-color: #f78f8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+.about-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7afaf;
+}
+
+.about-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.about-section .description {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+.team-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.team-header {
+    background-color: #f7afaf;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.team-header h2 {
+    font-size: 1.5rem;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.team-card .team-description {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+
+.footer {
+    background-color: #ee9e9e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////
+.blog-header {
+    background-color: #f78f8f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.blog-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 1rem;
+    color: #7a7070;
+}
+
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-main {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.blog-post {
+    background: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-post .meta {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.blog-post .read-more {
+    background-color: #f78f8f;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.blog-sidebar {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    color: #f78f8f;
+}
+
+.sidebar-section ul {
+    list-style: none;
+}
+
+.sidebar-section ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-section ul li a {
+    text-decoration: none;
+    color: #464343;
+    font-size: 1rem;
+}
+
+.sidebar-section ul li a:hover {
+    color: #ff6f61;
+}
+
+.sidebar-section .search-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.sidebar-section .search-box button {
+    background-color: #f78f8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}
+.head_under_nav{
+    background-color: #ffffff;
+height: 50px;
+
+}
+.body_content{
+    text-align: center;
+}
+.map_location{
+text-align:center ;
+margin-top: 2%
+}
+.form_content{
+    display: inline;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.info-section {
+    flex: 1;
+    border-left: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #fab9b9;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a39797;
+}
+
+.info-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.info-section a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.info-section a:hover {
+    text-decoration: underline;
+}
+////////////////////////////
+
+
+.pricing-header {
+    text-align: center;
+    background-color: #f76c6c;
+    color: white;
+    padding: 20px 0;
+}
+
+.pricing-header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pricing-header p {
+    font-size: 1rem;
+    color: #fdfdfd;
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.pricing-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.pricing-card .price {
+    font-size: 2rem;
+    color: #f76c6c;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.pricing-card ul li {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.pricing-card button {
+    background-color: #f76c6c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.pricing-sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sidebar-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-section ul li {
+    margin: 5px 0;
+}
+
+.sidebar-section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
